@@ -10,10 +10,14 @@
         header img { max-width: 150px; display: block; margin: 0 auto 10px; }
         nav { background: #026aa7; padding: 10px; text-align: center; }
         nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        section { padding: 20px; }
+        section { padding: 20px; text-align: center; }
         footer { background: #1e88e5; color: #fff; text-align: center; padding: 10px; margin-top: 20px; }
         .image-container { text-align: center; margin-top: 20px; }
         .image-container img { max-width: 100%; height: auto; border-radius: 5px; margin-bottom: 10px; }
+        .back-to-top { display: block; margin: 20px auto; padding: 10px 20px; background: #026aa7; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold; }
+        form { max-width: 400px; margin: 20px auto; padding: 20px; background: #fff; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        input, textarea { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; }
+        button { padding: 10px 20px; background: #026aa7; color: #fff; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; }
     </style>
 </head>
 <body>
@@ -31,6 +35,7 @@
     <section id="about">
         <h2>About Us</h2>
         <p>Supply Oilfield Services LLC specializes in oil reclamation and handling tanks bottoms, production water, and Off Spec oil. We are committed to providing efficient and environmentally responsible solutions while ensuring a safe working environment.</p>
+        <a href="#top" class="back-to-top">Back to Top</a>
     </section>
     <section id="services">
         <h2>Our Services</h2>
@@ -54,14 +59,26 @@
             </div>
             <li>Safety and Environment: We prioritize safety and environmental protection in all our operations.</li>
         </ul>
+        <a href="#top" class="back-to-top">Back to Top</a>
     </section>
     <section id="equipment">
         <h2>Equipment Specification</h2>
         <p>Our state-of-the-art equipment includes the Hiller 3-Phase Decanter for efficient oil-water-solid separation, ATEX separator units, and advanced chemical injection systems.</p>
+        <a href="#top" class="back-to-top">Back to Top</a>
     </section>
     <section id="contact">
         <h2>Contact Us</h2>
         <p>For more information or to request a service, please contact us at <strong>info@supplyoilfieldservices.com</strong> or call us at <strong>(123) 456-7890</strong>.</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <a href="#top" class="back-to-top">Back to Top</a>
     </section>
     <footer>
         <p>&copy; 2025 Supply Oilfield Services LLC. All rights reserved.</p>
