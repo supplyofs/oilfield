@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Supply Oilfield Services LLC</title>
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f0f8ff; color: #333; }
@@ -13,13 +13,32 @@
         section { padding: 20px; text-align: center; }
         footer { background: #1e88e5; color: #fff; text-align: center; padding: 10px; margin-top: 20px; }
         .image-container { text-align: center; margin-top: 20px; }
-        .image-container img { max-width: 100%; height: auto; border-radius: 5px; margin-bottom: 10px; }
+        .image-container img { max-width: 90%; height: auto; border-radius: 5px; margin-bottom: 15px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+
         form { max-width: 500px; width: 90%; margin: 20px auto; padding: 20px; background: #fff; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.1); text-align: left; }
         label { font-weight: bold; display: block; margin-top: 10px; }
         input, textarea { width: calc(100% - 20px); padding: 10px; margin: 5px 0; border: 1px solid #ccc; border-radius: 5px; font-size: 16px; display: block; }
         button { padding: 10px 20px; background: #026aa7; color: #fff; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; width: 100%; font-size: 16px; }
         button:hover { background: #025a85; }
-        #about h2, #services h2, #equipment h2, #contact h2 {
+
+        /* About Us destacado */
+        #about h2 {
+            font-size: 2.5em;
+            color: #026aa7;
+            margin-bottom: 20px;
+        }
+        #about p {
+            font-size: 1.5em;
+            color: #034f84;
+            line-height: 1.8;
+            max-width: 900px;
+            margin: 0 auto 20px;
+            border-bottom: 3px solid #026aa7;
+            padding-bottom: 15px;
+        }
+
+        /* Otros títulos */
+        #services h2, #equipment h2, #contact h2 {
             color: #026aa7;
             font-size: 2em;
             margin-bottom: 15px;
@@ -28,10 +47,11 @@
 </head>
 <body>
     <header>
-        <img src="Imagen1.png" alt="Company Logo">
+        <img src="images/logo.png" alt="Company Logo">
         <h1>Supply Oilfield Services LLC</h1>
         <p>Experts in Oil Reclamation, Water Treatment and Waste Management</p>
     </header>
+
     <nav>
         <a href="#about">About Us</a>
         <a href="#services">Services</a>
@@ -46,18 +66,27 @@
 
     <section id="services">
         <h2>Our Services</h2>
-        
+
         <h3>Oil Reclamation, Off-Spec Oil</h3>
         <p>Specialized equipment and services for off-spec oil management.</p>
         <p>Recover valuable oil from waste streams.</p>
-        
+        <div class="image-container">
+            <img src="images/oil.jpg" alt="Oil Reclamation Process">
+        </div>
+
         <h3>Lagoon Management, Tank Cleaning</h3>
         <p>Efficient handling and treatment of waste lagoons and pits.</p>
         <p>Safe and thorough cleaning of oil tanks.</p>
+        <div class="image-container">
+            <img src="images/lagoon.jpg" alt="Lagoon Management Equipment">
+        </div>
 
         <h3>Water Treatment</h3>
         <p>In partnership with Remote Group, we offer advanced water treatment solutions.</p>
         <p>We have been working with the largest company in the industry.</p>
+        <div class="image-container">
+            <img src="images/water.jpg" alt="Water Treatment Field Setup">
+        </div>
 
         <h3 style="text-transform: uppercase; margin-top:30px;">Safety and Environment</h3>
         <p style="font-weight:bold;">We prioritize safety and environmental protection in all our operations.</p>
@@ -66,6 +95,9 @@
     <section id="equipment">
         <h2>Equipment Specification</h2>
         <p>Our state-of-the-art equipment includes the Hiller 3-Phase Decanter for efficient oil-water-solid separation, ATEX separator units, and advanced chemical injection systems.</p>
+        <div class="image-container">
+            <img src="images/equipment.jpg" alt="Equipment Control Panel">
+        </div>
     </section>
 
     <section id="contact">
@@ -89,4 +121,5 @@
     </footer>
 </body>
 </html>
+
 
