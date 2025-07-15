@@ -14,12 +14,16 @@
         footer { background: #1e88e5; color: #fff; text-align: center; padding: 10px; margin-top: 20px; }
         .image-container { text-align: center; margin-top: 20px; }
         .image-container img { max-width: 100%; height: auto; border-radius: 5px; margin-bottom: 10px; }
-        .back-to-top { display: block; margin: 20px auto; padding: 10px 20px; background: #026aa7; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold; }
         form { max-width: 500px; width: 90%; margin: 20px auto; padding: 20px; background: #fff; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.1); text-align: left; }
         label { font-weight: bold; display: block; margin-top: 10px; }
         input, textarea { width: calc(100% - 20px); padding: 10px; margin: 5px 0; border: 1px solid #ccc; border-radius: 5px; font-size: 16px; display: block; }
         button { padding: 10px 20px; background: #026aa7; color: #fff; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; width: 100%; font-size: 16px; }
         button:hover { background: #025a85; }
+        #about h2, #services h2, #equipment h2, #contact h2 {
+            color: #026aa7;
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
     </style>
 </head>
 <body>
@@ -34,41 +38,36 @@
         <a href="#equipment">Equipment</a>
         <a href="#contact">Contact</a>
     </nav>
+
     <section id="about">
         <h2>About Us</h2>
         <p>Supply Oilfield Services LLC specializes in oil reclamation and handling tanks bottoms, production water, and Off Spec oil. We are committed to providing efficient and environmentally responsible solutions while ensuring a safe working environment.</p>
     </section>
+
     <section id="services">
         <h2>Our Services</h2>
-        <h3>Oil Reclamation</h3>
+        
+        <h3>Oil Reclamation, Off-Spec Oil</h3>
+        <p>Specialized equipment and services for off-spec oil management.</p>
         <p>Recover valuable oil from waste streams.</p>
-        <div class="image-container">
-            <img src="oil 1.jpg" alt="Oil Reclamation Process">
-        </div>
-        <h3>Tank Cleaning</h3>
+        
+        <h3>Lagoon Management, Tank Cleaning</h3>
+        <p>Efficient handling and treatment of waste lagoons and pits.</p>
         <p>Safe and thorough cleaning of oil tanks.</p>
-        <h3>Lagoon Management</h3>
-        <p>Efficient handling and treatment of waste lagoons.</p>
-        <div class="image-container">
-            <img src="oil 2.jpg" alt="Lagoon Management">
-            <img src="oil 3.jpg" alt="Oil Separation">
-        </div>
-        <h3>Off-Spec Oil</h3>
-        <p>Specialized services for off-spec oil management.</p>
+
         <h3>Water Treatment</h3>
         <p>In partnership with Remote Group, we offer advanced water treatment solutions.</p>
-        <div class="image-container">
-            <img src="water 1.png" alt="Water Treatment Process">
-            <img src="water 2.png" alt="Water Filtration System">
-            <img src="water 3.png" alt="Advanced Water Purification">
-        </div>
-        <h3>Safety and Environment</h3>
-        <p>We prioritize safety and environmental protection in all our operations.</p>
+        <p>We have been working with the largest company in the industry.</p>
+
+        <h3 style="text-transform: uppercase; margin-top:30px;">Safety and Environment</h3>
+        <p style="font-weight:bold;">We prioritize safety and environmental protection in all our operations.</p>
     </section>
+
     <section id="equipment">
         <h2>Equipment Specification</h2>
         <p>Our state-of-the-art equipment includes the Hiller 3-Phase Decanter for efficient oil-water-solid separation, ATEX separator units, and advanced chemical injection systems.</p>
     </section>
+
     <section id="contact">
         <h2>Contact Us</h2>
         <p>Email: <strong>rochoa@supplyofs.com</strong></p>
@@ -84,8 +83,10 @@
             <button type="submit">Send Message</button>
         </form>
     </section>
+
     <footer>
         <p>&copy; 2025 Supply Oilfield Services LLC. All rights reserved.</p>
     </footer>
 </body>
 </html>
+
